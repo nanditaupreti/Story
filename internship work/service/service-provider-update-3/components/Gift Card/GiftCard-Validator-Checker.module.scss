@@ -1,0 +1,27 @@
+.container{
+    height: 100%;
+    width: 100%;
+    // background-color: blueviolet;
+    display: flex;
+
+    .validator-checker-container{
+        padding: 80px;
+        margin: auto;
+        height: fit-content;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 10px 10px 15px rgba(198, 198, 198, 0.2), -5px -5px 10px rgba(198, 198, 198, 0.15);
+        border-radius: 15px;
+
+        Button{
+            width: 100%;
+        }
+
+    }
+    .validator-checker-container>span{
+        height: 43px;
+        border-radius: 21px;
+    }
+}

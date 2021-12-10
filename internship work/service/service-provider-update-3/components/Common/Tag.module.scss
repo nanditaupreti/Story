@@ -1,0 +1,33 @@
+.tag {
+    height: 50px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding-inline: 14px;
+    padding-block: 0;
+    font-weight: 400;
+    border: var(--border-dark-neutral-1);
+    border-radius: 32px;
+    &.selected {
+        background-color: var(--dark-neutral-1);
+        color: var(--white)
+    }
+    
+    &.primary {
+        border: var(--border-neutral-2);
+        color: var(--dark-neutral-2);
+        cursor: pointer;
+        .icon {
+            color: var(--light-neutral-1)
+        }
+
+        &.selected {
+            border-color: transparent;
+            background-color: var(--primary-1);
+            color: var(--white);
+            .icon {
+                color: inherit;
+            }
+        }
+    }
+}

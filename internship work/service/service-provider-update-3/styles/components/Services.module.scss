@@ -1,0 +1,96 @@
+.main-form-container{
+    width : 100%;
+    display : flex;
+}
+
+.form-container-1{
+    // width: 80%;
+    width : 85%;
+    display : flex;
+    flex-direction : column;
+    // margin-top: 43px;
+    // margin-right: 35px;
+
+    margin-block-start: 43px;
+    margin-inline-end: 35px;
+    // background-color: wheat;
+    
+}
+
+.button-container{
+    width : 100%;
+    display: flex;
+    justify-content : space-between;
+    align-items : center;
+    background-color: wheat;
+    
+    .lb{
+        background-color : var(--dark-neutral-2);
+    }
+    Button{
+
+
+        .rb{
+            background-color : var(--primary-1);
+            justify-content : space-evenly;
+            align-items : center;
+            column-gap : 8px;
+        }
+
+        justify-content : space-evenly;
+        align-items : center;
+        column-gap : 8px;
+
+    }
+}
+
+.form-container-2{
+    width : 15%;
+    height : fit-content;
+    overflow : hidden;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    box-shadow : var(--shadow-3);
+    border-radius : 6px;
+    // margin-top: 23px;
+
+    margin-block-start: 23px;
+
+    .overview-form-item{
+        display: flex;
+        // margin-left: 35px;
+
+        margin-inline-start: 35px;
+
+        align-items : center;
+        color : black;
+
+        label{
+            color: black;
+        }
+
+        .tick-container{
+            display: flex;
+            align-items : center;
+            // padding-left : 3px;
+
+            padding-inline-start: 3px;
+
+            color : black;
+
+            .tick{
+                color : var(--primary-1);
+                // padding-right : 3px;
+                padding-inline-end: 3px;
+            }
+        }
+    }
+}
+
+
+.ant-form-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,9 @@
+{
+    "minLengthValidator": "{{ field }} must be at least {{ count }} characters",
+    "email": "{{ field }} is not a valid email!",
+    "invalid": "Invalid {{ field }}!",
+    "required": "{{ field }} is required!",
+    "value already taken": "'{{ value }}' already taken!",
+    "please select country code": "Please select country code!",
+    "min max": "{{ field }} must be between {{ min }} to {{ max }} characters"
+}

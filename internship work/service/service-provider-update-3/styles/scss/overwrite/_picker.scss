@@ -1,0 +1,237 @@
+.ant-picker {
+    border: none;
+    padding: 0;
+    .ant-picker-input {
+        position: relative;
+        input {
+            padding-right: 40px;
+            &[title*="-"] {
+                padding-right: 65px;
+            }
+        }
+    }
+    
+    &.ant-picker-range {
+        border: var(--border-2);
+        border-radius: 6px;
+        padding-inline: 1.142rem;
+
+        .ant-picker-input {
+            input {
+                padding-inline: 0;
+            }
+        }
+
+        .ant-picker-suffix {
+            position: static;
+        }
+        
+        .ant-picker-range-separator {
+            width: auto;
+        }
+        input {
+            border: none;
+            &:hover, &:focus {
+                box-shadow: none;
+                border: none;
+            }
+        }
+    }
+
+    .ant-picker-suffix {
+        position: absolute;
+        right: 15px;
+    }
+    .ant-picker-clear {
+        right: 40px;
+    }
+    &.ant-picker-focused {
+        box-shadow: none;
+    }
+}
+
+.ant-picker-dropdown {
+    width: initial;
+}
+
+.date-picker{
+    .ant-picker {
+        border: none;
+        padding: 0;
+        .ant-picker-input {
+            position: relative;
+            input {
+                padding-right: 40px;
+                &[title*="-"] {
+                    padding-right: 65px;
+                }
+            }
+        }
+        
+        &.ant-picker-range {
+            // border: var(--border-2);
+            border-radius: 6px;
+            padding-inline: 1.142rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+    
+            .ant-picker-input {
+                border: var(--border-2);
+                border-radius: 6px;
+                width: 100%;
+                cursor: pointer;
+
+                input {
+                    padding-inline: 0;
+                    text-align: center;
+                    width: fit-content;
+                    cursor: pointer;
+                }
+            }
+
+            .ant-picker-suffix {
+                // visibility: hidden;
+            }
+            
+            .ant-picker-range-separator {
+                width: auto;
+                visibility: hidden;
+            }
+
+        }
+    }
+    
+}
+
+.booking-picker{
+    .ant-picker {
+        border: none;
+        padding: 0;
+        .ant-picker-input {
+            position: relative;
+            input {
+                padding-right: 40px;
+                &[title*="-"] {
+                    padding-right: 65px;
+                }
+            }
+        }
+        
+        &.ant-picker-range {
+            // border: var(--border-2);
+            border-radius: 6px;
+            padding-inline: 1.142rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: var(--border-2);
+    
+            .ant-picker-input {
+                border-radius: 6px;
+                width: 100%;
+                cursor: pointer;
+                
+                input {
+                    padding-inline: 0;
+                    text-align: center;
+                    width: fit-content;
+                    cursor: pointer;
+                }
+            }
+
+            .ant-picker-suffix {
+                // visibility: hidden;
+            }
+            
+            .ant-picker-range-separator {
+                width: auto;
+                visibility: hidden;
+            }
+
+        }
+    }
+    
+}
+
+.booking-picker:after{
+    content: 'date_range';
+    font-family: 'Material Icons';
+    position: absolute;
+    right: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--light-neutral-1) !important;
+}
+.action-booking-picker{
+    .ant-picker {
+        border: none;
+        padding: 0;
+        .ant-picker-input {
+            position: relative;
+            input {
+                padding-right: 40px;
+                &[title*="-"] {
+                    padding-right: 65px;
+                }
+            }
+        }
+        
+        &.ant-picker-range {
+            // border: var(--border-2);
+            border-radius: 6px;
+            padding-inline: 1.142rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: var(--border-2);
+            height: 43px;
+    
+            .ant-picker-input {
+                border-radius: 6px;
+                width: 100%;
+                cursor: pointer;
+                
+                input {
+                    padding-inline: 0;
+                    text-align: center;
+                    width: fit-content;
+                    cursor: pointer;
+                }
+            }
+
+            .ant-picker-suffix {
+                // visibility: hidden;
+            }
+            
+            .ant-picker-range-separator {
+                width: auto;
+                visibility: hidden;
+            }
+
+        }
+    }
+    
+}
+
+.action-booking-picker:after{
+    content: 'date_range';
+    font-family: 'Material Icons';
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--light-neutral-1) !important;
+}
+
+
+.date-picker .ant-picker .ant-picker-input:after{
+    content: 'arrow_drop_down';
+    font-family: 'Material Icons';
+    position: absolute;
+    right: 7px;
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--light-neutral-1) !important;
+  }

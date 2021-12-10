@@ -1,0 +1,31 @@
+.address-container{
+    padding: 20px;
+    input{
+        height: 54px;
+
+    }
+    h6{
+        cursor: pointer;
+    }
+}
+
+.no-padding-modal{
+    background-color: red;
+    .ant-modal-body{
+        background-color: aquamarine;
+    }
+}
+
+.myLocationIcon{
+    position: absolute;
+    left: 1px;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: white;
+    width: fit-content;
+    padding-block-start: 5px;
+    padding-inline: 5px;
+    height: fit-content;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.container{
+
+    Space{
+        height: 43px;
+    }
+    
+    Select{
+        height: 43px;
+    }
+}
+
+.estimated-cost-container{
+    height: 60px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    background: var(--secondary-4);
+    align-items: center;
+    border-radius: 9px;
+}
+
+.ant-select {
+    &, &.ant-select-single {
+        &, &:not(.ant-select-customize-input) {
+            .ant-select-selector {
+                border: none;
+                padding: 16px 18px;
+                height: 43px;
+                line-height: 22px;
+                border: var(--border-2);
+            }
+        }
+    }
+}

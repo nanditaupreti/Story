@@ -1,0 +1,11 @@
+.all_list_columns{
+    height: 60px;
+    display: grid;
+    border : 1px solid var(--light-neutral-3);
+    grid-template-columns :36px 125px 100px 100px 100px 133px 133px 100px 100px;
+    justify-content: space;
+    align-items: center;
+    padding-inline: 10px;
+    padding-block: 10px;
+    font-size: 11px;
+  }

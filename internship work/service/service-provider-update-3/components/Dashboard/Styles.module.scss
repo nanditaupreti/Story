@@ -1,0 +1,48 @@
+.card{
+    width: 70%;
+    border-radius: 9px;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+
+}
+
+.card-inside{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-border-danger{
+    border: 1px solid var(--red-active);
+}
+
+.card-border-success{
+    border: 1px solid var(--green-1);
+}
+
+.card-border-secondary{
+    border: 1px solid var(--secondary-1);
+}
+.card-border-primary{
+    border: 1px solid var(--primary-1);
+}
+
+.danger{
+    color: var(--red-active);
+}
+
+.success{
+    color: var(--green-1);
+}
+
+.secondary{
+    color: var(--secondary-1);
+}
+
+.primary{
+    color: var(--primary-1);
+}
+
+

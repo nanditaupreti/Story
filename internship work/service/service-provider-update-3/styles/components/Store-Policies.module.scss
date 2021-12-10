@@ -1,0 +1,50 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    row-gap: 20px;
+
+    Input, Select{
+        height: 43px !important;
+    }
+}
+
+.grid-setup{
+    display: flex;
+    align-items: center;
+
+    Input, Select{
+        height: 43px !important;
+    }
+}
+
+.date-container{
+
+    display: flex;
+    align-items: center;
+    height: 122px;
+
+    div{
+        width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 100%
+
+    }
+    
+    
+    .add-more{
+        height: 100% !important;
+        border: 1px dashed var(--primary-1) !important;
+        border-radius: 9px !important;
+    }
+}
+
+.date-item-container{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}

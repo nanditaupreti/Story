@@ -1,0 +1,11 @@
+.stats-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 9fr 11fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 52px;
+    margin-bottom: 250px;
+}

@@ -1,0 +1,20 @@
+.test{
+    // background-color: violet;
+    grid-template-columns: repeat(auto-fit,minmax(143px,1fr));
+    display: grid;
+    column-gap: 21px;
+    // margin-bottom: 41px;
+
+    margin-block-end: 41px;
+
+    .divider{
+        background-color: #BDBDBD
+    }
+}
+
+.divider{
+    background-color: #BDBDBD
+}
+
+// 163px auto auto auto auto 83px 100px
+

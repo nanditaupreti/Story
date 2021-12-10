@@ -1,0 +1,80 @@
+.stats-card {
+    padding: 20px 15px;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-3);
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    .stats-card-icon {
+        .material-icons {
+            font-size: 26px;
+        }
+    }
+    &.primary {
+        border-color: var(--primary-1);
+        .stats-card-icon {
+            color: var(--primary-1);
+        }
+    }
+    &.secondary {
+        border-color: var(--secondary-1);
+        .stats-card-icon {
+            color: var(--secondary-1);
+        }
+    }
+    &.danger {
+        border-color: var(--red-1);
+        .stats-card-icon {
+            color: var(--red-1);       
+        }
+    }
+
+    .stats-card-additional-stats {
+        position: absolute;
+        font-size: 10px;
+        text-align: right;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        width: calc(100% - 35px);
+        color: var(--dark-neutral-2);
+        --lh: 18px;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            li {
+                height: var(--lh);
+                line-height: var(--lh);
+                margin-bottom: 2px;
+                display: inline-block;
+                width: 100%;
+                span {
+                    display: inline-block;
+                    float: right;
+                }
+            }
+        }
+        .stat-name {
+            margin-right: 6px;
+            width: calc(100% - 66px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .stat-value {
+            padding: 0 6px;
+            border-radius: var(--lh);
+            font-weight: bold;
+            color: var(--dark-neutral-1);
+            background-color: var(--secondary-4);
+            box-shadow: 0 0 0 1px inset var(--secondary-1);
+            // border: 1px solid var(--secondary-1);
+            display: inline-block;
+            width: 60px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    }
+}

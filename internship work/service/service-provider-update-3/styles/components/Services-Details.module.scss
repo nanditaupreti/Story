@@ -1,0 +1,50 @@
+// form{
+//     label{
+//         color: var(--dark-neutral-4);
+//     }
+// }
+
+// .ant-form .ant-form-item-label > label{
+//     color: var(--dark-neutral-4);
+// }
+
+// .ant-col.ant-form-item-label{
+//     text-align: left;
+//     color : var(--dark-neutral-4);
+
+// }
+
+
+.primary-lang{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    // grid-template-rows: repeat(auto-fit,minmax(400px,1fr));
+    // background-color: yellowgreen;
+    // margin-top: 42px;
+    grid-column-gap: 35px;
+    // margin-bottom: 32px;
+
+    margin-block-end: 32px;
+}
+
+.primary-lang-container{
+    width: 100%;
+    // height: fit-content;
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: repeat(auto-fit,minmax(20px 80px));
+    column-gap: 31px;
+
+    Button{
+        width: 100%;
+    }
+}
+
+.divider{
+    // margin-top: 52px;
+    // margin-bottom: 29px;
+
+    margin-block-start: 52px;
+    margin-block-end: 29px;
+    background-color: #BDBDBD;
+}

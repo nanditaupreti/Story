@@ -1,0 +1,36 @@
+.rbc-calendar {
+    div {
+        width: initial;
+        float: initial;
+    }
+}
+
+.rbc-toolbar {
+    button {
+        &:active,
+        &:active:hover,
+        &.rbc-active:focus,
+        &.rbc-active:hover,
+        &.rbc-active {
+            background-color: var(--primary-2);
+            box-shadow: none;
+            color: var(--white);
+            border-color: var(--primary-1);
+        }
+        &:focus, &:hover {
+            background-color: var(--primary-4);
+        }
+    }
+}
+
+.rbc-off-range-bg {
+    background-color: var(--primary-4);
+}
+
+.rbc-event {
+    background-color: var(--primary-1);
+    border-radius: 2px;
+    &.rbc-selected {
+        background-color: var(--primary-active);
+    }
+}
