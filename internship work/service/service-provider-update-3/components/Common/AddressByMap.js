@@ -419,29 +419,29 @@ const handleEditAddress=()=>{
               <Form>
                 <div className="grid-view grid-1 rowgap-20 colgap-20 mt-10">
                   
-                  <Form.Item>
+                  {/* <Form.Item>
                   
-                  <div className="grid-view grid-2 colgap-30 rowgap-20">
+                  <div className="grid-view grid-2 colgap-30 rowgap-20"> */}
                     
-                    <Form.Item className="mb-10" label="Name" required={true}>
+                    {/* <Form.Item className="mb-10" label="Name" required={true}>
                       <Input value={name} type="text" maxLength={70} onChange={(event ) => setName(event.target.value)}></Input>
-                    </Form.Item>
+                    </Form.Item> */}
 
-                    <Form.Item className="mb-10" name={['email']} hasFeedback label="Email" validateTrigger={['onBlur']} rules={[
+                    {/* <Form.Item className="mb-10" name={['email']} hasFeedback label="Email" validateTrigger={['onBlur']} rules={[
                         { required: false, message: t('required', {field: 'Email'}) },
                         { validator: checkEmail },
                         ]}>
                         <Input placeholder="ex:halais" />
-                    </Form.Item>
+                    </Form.Item> */}
 
-                  </div>
-                  </Form.Item>
+                  {/* </div>
+                  </Form.Item> */}
                   <Form.Item>
                     <div className="grid-view grid-2 colgap-30 mb-10">
                       
-                      <Form.Item label="Mobile Number" required={true}>
+                      {/* <Form.Item label="Mobile Number" required={true}>
                         <Input value={mobileNumber} maxLength={10} onChange={(event ) => setMobileNumber(event.target.value)}></Input>
-                      </Form.Item>
+                      </Form.Item> */}
                       
                       <Form.Item label={<label className="txt dark3">House No.<span>(Optional)</span></label>}>
                         <Input value={streetNo} maxLength={15} onChange={(event ) => setStreetNo(event.target.value)}></Input>

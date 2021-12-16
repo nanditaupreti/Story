@@ -16,6 +16,9 @@ import ProfileLeft from './profile-left';
 import CompleteSettingModal from '../components/Setting-Modals/Complete-Setting-modal';
 import cx from 'classnames';
 import { editStoreAddSettings, getCurrencyDetails, getMyStoreDetails, getStoreAddDetails } from '../services/address';
+import Card4 from '../components/Common/card4';
+import CategoriesModal from '../components/Setting-Modals/CategoriesModal';
+
 
 const Settings = () => {
     const [selectedModalName, setSelectedModalName] = useState("");
@@ -32,7 +35,6 @@ const Settings = () => {
     const [payAtVenue,setPayAtVenue]=useState(0);
     const [emailNotify,setEmailNotify]=useState(0);
     const [smsNotify,setSmsNotify]=useState(0);
-    
     const [updatedAt,setUpdatedAt]=useState("");
     const [timeZoneNew,setTimeZoneNew]=useState("");
     const [taxRateNew,setTaxRateNew]=useState(0);
@@ -48,6 +50,11 @@ const Settings = () => {
     const [demographicsNew,setDemographicsNew]=useState(0);
     const [demographicsId,setDemographicsId]=useState(0);
     const [demographics,setdemographics]=useState([]);
+    const [categoriesId,setCategoriesId]=useState(0);
+    const [categoriesName,setCategoriesName]=useState("");
+    const [subcategoriesId,setSubCategoriesId]=useState(0);
+    const [subcategoriesName,setSubCategoriesName]=useState("");
+
     useEffect(() =>{
         
             getMyStoreDetails().then(res =>{
@@ -62,6 +69,7 @@ const Settings = () => {
             }).catch((err:any)=>{
                 console.log(err);
             })
+            
             
     },[]);
     function settingInitials(){
@@ -80,7 +88,6 @@ const Settings = () => {
                setUpdatedAt(res.addSettings.updatedAt);
                setPayAtVenue(res.addSettings.payAtVenue);
                setDemographicsId(res.addSettings.DemorgraphicType.demorgraphicServedId);
-            //    console.log("values set");
            }
         }).catch((err:any)=>{
             console.log(err);
@@ -88,32 +95,7 @@ const Settings = () => {
         })
     }
     settingInitials(); 
-    // let profileCards = [
-    //     {
-    //         title: "General Settings", modalName: "general_settings", content: [{ 0: "Time Zone", 1: "Arabian Standard Time (GMT+3)" },
-    //         { 0: "Tax Rate", 1: "10%" },
-    //         { 0: "Date Format", 1: "18 Nov, 2020" },
-    //         ]
-    //     },
-    //     {
-    //         title: "Notification & Security", modalName: "notification_and_security", content: [{ 0: "Notification Methods", 1: "SMS, E-Mail" },
-    //         { 0: "Password", 1: "xxxxxx" },
-    //         ]
-    //     },
-    //     {
-    //         title: "Booking & Payments", modalName: "booking_and_payments", content: [{ 0: "Payout Frequency", 1: "Daily" },
-    //         { 0: "Pay at Venue", 1: "Yes" },
-    //         { 0: "Allowed to book time", 1: "30 Minutes" },
-    //         ]
-    //     },
-    //     {
-    //         title: "Subscription Tiers", modalName: "subscription_tier", content: [{ 0: "Current Plan", 1: "Professional Next Billing Date 15 Nov, 2021" },
-    //         ]
-    //     },
-    // ];
-
-
-
+    
 
 const handleOk = (evt : any) => {
     console.log('ok clicked', evt)
@@ -148,6 +130,9 @@ const openModal = (type : any) => {
         break;
 
         case "Change Password" : setSelectedModalName("Change Password");
+        break;
+
+        case "Categories" : setSelectedModalName("Categories");
         break;
     }
 };
@@ -187,7 +172,7 @@ const handleEdit=()=>{
         }
       
 }
-    console.log(currencyId,currencyIdNew,currencyNew);
+    // console.log(currencyId,currencyIdNew,currencyNew);
     
     return(
         <Layout>
@@ -236,8 +221,13 @@ const handleEdit=()=>{
                             ></SettingCard3>
 
                             <Divider className="mt-0"></Divider>
+                             
+                            <Card4 modal={openModal}></Card4>
+
+                            <Divider className="mt-0"></Divider>
 
                             <SettingCard4  modal={openModal}></SettingCard4>
+
                             </div>
                         }
                     </div>
@@ -281,7 +271,9 @@ const handleEdit=()=>{
                             selectedModalName === "Change Password" ? 
                             <ResetPassword></ResetPassword>
                              :
-        
+                             selectedModalName === "Categories" ? 
+                             <CategoriesModal></CategoriesModal>
+                            :
                             <BookingAndPaymentsModal></BookingAndPaymentsModal>
                             }
                     </Modal>

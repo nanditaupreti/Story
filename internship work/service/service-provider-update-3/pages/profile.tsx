@@ -5,7 +5,7 @@ import Layout from '../components/User/Layout';
 import Card1 from '../components/Profile/card1';
 import Card2 from '../components/Profile/card2';
 import Card3 from '../components/Profile/card3';
-import Card4 from '../components/Profile/card4';
+import Card4 from '../components/Common/card4';
 import Card5 from '../components/Profile/card5';
 import Card6 from '../components/Profile/card6';
 import Card7 from '../components/Profile/card7';
@@ -151,8 +151,6 @@ const openModal = (type : any) => {
                                 <Card7 setUserDetailsArray={setUserDetailsArray} email={email} mobileNumber={mobileNumber} ></Card7>
                                 <h5 className="mt-20">Store Settings</h5>
                                 <Card2></Card2>
-                                <Card4></Card4>
-                                <Card5></Card5>
                                 <Card6></Card6>
         
                                 <CardTemplate title={"Addresses"} modal={openModal}>
